@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
-  Image,
   ImageBackground,
   ScrollView,
   StyleSheet,
@@ -60,8 +59,10 @@ export function SplashScreen({ onDone }: { onDone: () => void }) {
         colors={['#00000020', '#00000020', '#000000a0']}
         style={s.fill}
       >
-        <View style={s.logoWrap}>
-          <Image source={images.logo} style={s.logo} resizeMode="contain" />
+        <View style={s.splashTitleWrap}>
+          <Text accessibilityRole="header" style={s.splashTitle}>
+            Admiral Local Guide
+          </Text>
         </View>
         <View
           pointerEvents="none"
@@ -98,7 +99,7 @@ const slides = [
   {
     image: images.welcome,
     title: 'Everything in One Place',
-    text: 'Explore the Admiral Casino complex, discover every venue, and find essential services with ease.',
+    text: 'Explore the Admiral complex, discover every venue, and find essential services with ease.',
   },
   {
     image: images.dining,
@@ -175,15 +176,22 @@ const s = StyleSheet.create({
   fill: {
     flex: 1,
   },
-  logoWrap: {
+  splashTitleWrap: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  logo: {
+  splashTitle: {
     width: '80%',
     maxWidth: 380,
-    height: 130,
+    fontFamily: serif,
+    fontSize: 36,
+    lineHeight: 46,
+    textAlign: 'center',
+    color: colors.gold,
+    textShadowColor: '#000000',
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 8,
   },
   loader: {
     position: 'absolute',

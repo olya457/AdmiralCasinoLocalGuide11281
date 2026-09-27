@@ -1,4 +1,4 @@
-package com.admiralcasinolocalguide
+package com.admiralcasino.localguide
 
 import android.app.Application
 import com.facebook.react.PackageList

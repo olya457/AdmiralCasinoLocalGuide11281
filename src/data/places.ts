@@ -3,12 +3,12 @@ import { images } from './images';
 export const venues: Place[] = [
   {
     id: 'Casino',
-    name: 'Casino',
+    name: 'Gaming Hall',
     hours: 'Open 24 hours',
     short: 'Elegant gaming and entertainment',
     marker: { x: 80, y: 16 },
     offer: {
-      title: 'Welcome Casino Offer',
+      title: 'Welcome Offer',
       text: 'Receive an exclusive welcome bonus and enjoy selected casino experiences during your visit.',
     },
     paragraphs: [

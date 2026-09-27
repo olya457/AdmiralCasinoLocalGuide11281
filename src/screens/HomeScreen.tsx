@@ -53,7 +53,7 @@ export function HomeScreen() {
           <Text style={styles.label}>
             GOOD {hour < 12 ? 'MORNING' : hour < 18 ? 'AFTERNOON' : 'EVENING'}
           </Text>
-          <Text style={styles.title}>Admiral Casino Resort</Text>
+          <Text style={styles.title}>Admiral Resort</Text>
         </View>
         <IconButton
           name="settings"
