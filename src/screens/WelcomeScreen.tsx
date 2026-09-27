@@ -61,7 +61,7 @@ export function SplashScreen({ onDone }: { onDone: () => void }) {
       >
         <View style={s.splashTitleWrap}>
           <Text accessibilityRole="header" style={s.splashTitle}>
-            Admiral Local Guide
+            Admiral Resort Hub
           </Text>
         </View>
         <View

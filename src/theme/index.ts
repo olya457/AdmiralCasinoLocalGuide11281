@@ -1,9 +1,9 @@
 import { Platform, StyleSheet } from 'react-native';
 export const colors = {
-  background: '#030a14',
-  navy: '#081d3c',
-  blue: '#0e315f',
-  border: '#203957',
+  background: '#061710',
+  navy: '#0b281c',
+  blue: '#123d2b',
+  border: '#28513d',
   gold: '#ffda19',
   muted: '#98a9c0',
   text: '#f4f6fc',
@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
     borderColor: colors.border,
     borderRadius: 6,
     color: colors.text,
-    backgroundColor: '#06172f',
+    backgroundColor: colors.background,
     paddingHorizontal: 14,
     paddingVertical: 13,
     minHeight: 48,
